@@ -17,7 +17,7 @@ const input = require('readline-sync');
                        'true',
                        40,
                        'Trajectory',
-                       3];
+                       '3'];
  let candidateAnswers = [];
 
    // TODO 1.1b: Ask for candidate's name //
