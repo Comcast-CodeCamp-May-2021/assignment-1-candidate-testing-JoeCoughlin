@@ -7,7 +7,7 @@ const input = require('readline-sync');
  // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
  let question = 'Who was the first American woman in space? ';
  let correctAnswer = 'Sally Ride';
- let candidateAnswer;
+ let candidateAnswer = "";
  let questions = [ 'Who was the first American woman in space? ',
                    'True or false: 5 kilometer == 5000 meters? ',
                    '(5 + 3)/2 * 10 = ? ',
@@ -43,7 +43,7 @@ const input = require('readline-sync');
      console.log("Your answer: " + candidateAnswers[i]);
      console.log("Correct answer: " + correctAnswers[i] + "\n")
     if(candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) {
-     correct++
+     correct+=1
    }
    }
    
