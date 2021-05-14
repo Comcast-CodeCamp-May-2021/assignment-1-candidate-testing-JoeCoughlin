@@ -19,6 +19,7 @@ const input = require('readline-sync');
                        'Trajectory',
                        '3'];
  let candidateAnswers = [];
+ candidateAnswers = candidateAnswers.toString
 
    // TODO 1.1b: Ask for candidate's name //
 
@@ -38,7 +39,6 @@ const input = require('readline-sync');
     function gradeQuiz() {
 
    let correct = 0;
-   let candidateAnswers = candidateAnswers.toString()
    for (i = 0; i < correctAnswers.length; i++){
      console.log(questions[i] + "\n");
      console.log("Your answer: " + candidateAnswers[i]);
