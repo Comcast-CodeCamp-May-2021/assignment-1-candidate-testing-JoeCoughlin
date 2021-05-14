@@ -29,14 +29,14 @@ const input = require('readline-sync');
 
    // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
     function askQuestion() {
-      for (let i = 0; i < questions.length; i++) {
-    candidateAnswers.push(input.question(questions[i]));
-    console.log(`Your answer: ${candidateAnswers[i]}\nCorrect answer: ${correctAnswers[i]}\n`);
+      for (let i=0; i < questions.length; i++){
+        candidateAnswers[i] = input.question("\n" + questions[i]);
       }
+
  }
 
    // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-    function gradeQuiz() {
+    function gradeQuiz(candidateAnswers) {
 
    let correct = 0;
    for (i = 0; i < correctAnswers.length; i++){
