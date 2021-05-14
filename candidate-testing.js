@@ -42,7 +42,7 @@ const input = require('readline-sync');
      console.log(questions[i] + "\n");
      console.log("Your answer: " + candidateAnswers[i]);
      console.log("Correct answer: " + correctAnswers[i] + "\n")
-    if (candidateAnswers[i].toString.toLowerCase() === correctAnswers[i].toString.toLowerCase()){
+    if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()){
      correct++
    }
    }
